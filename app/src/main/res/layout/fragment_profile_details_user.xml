@@ -1,0 +1,150 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.bagherifaez.app.scrollviewadjustviewpager.ProfileDetailsUserFragment"
+    android:clickable="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:layout_gravity="top"
+        android:id="@+id/llNestedScrollerContainer"
+        >
+        <!--  Name Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/etProfileDetailsUser_fullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:hint="Full Name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <!--  ID type Spinner Label -->
+            <Spinner
+                android:id="@+id/spProfileDetailsUser_idType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:spinnerMode="dialog"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                >
+            </Spinner>
+            <!--  ID Gender Label -->
+            <Spinner
+                android:id="@+id/spProfileDetailsUser_gender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:spinnerMode="dialog"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined">
+            </Spinner>
+            <!--  ID Spinner Label -->
+
+        </LinearLayout>
+
+        <!--  ID Number Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/etProfileDetailsUser_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="TextView 1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--  ID Number Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/etProfileDetailsUser_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="TextView 2" />
+        </android.support.design.widget.TextInputLayout>
+        <!--  ID Number Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText android:id="@+id/etProfileDetailsUser_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="TextView 3" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--  Marital status Spinner Label -->
+        <Spinner
+            android:id="@+id/spProfileDetailsUser_maritalStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:spinnerMode="dialog"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined">
+        </Spinner>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--  Marital status Spinner Label -->
+
+            <Spinner
+                android:id="@+id/spProfileDetailsUser_phoneNumberCode"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                android:layout_gravity="bottom">
+            </Spinner>
+
+            <!--  Mobile Number Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="4">
+                <EditText android:id="@+id/etProfileDetailsUser_phoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:hint="Mobile Number"
+                    />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnProfileDetailsUserNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Submit" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

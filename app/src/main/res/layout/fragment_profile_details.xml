@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.bagherifaez.app.scrollviewadjustviewpager.ProfileDetailsFragment"
+    android:clickable="true"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rlProfileDetailsSubStepper"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="12dp"
+        android:paddingRight="24dp"
+        android:paddingLeft="24dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="3"
+            >
+            <TextView
+                android:id="@+id/tvProfileDetails1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="details 1"
+                android:textAlignment="center"
+                android:background="@android:color/holo_green_dark"
+                android:maxLines="1"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/tvProfileDetails2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="details 2"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:background="@color/colorAccent"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/tvProfileDetails3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="details 3"
+                android:maxLines="1"
+                android:textAlignment="center"
+                android:background="@android:color/darker_gray"
+                android:textColor="#000000"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+    <FrameLayout
+        android:id="@+id/containerProfileDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></FrameLayout>
+</LinearLayout>
